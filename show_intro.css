@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400');
+nav{
+    background-color:#162529;
+}
+#mainContent{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #F2EDE1;
+}
+#ContentUp{
+    position:relative;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #162529;
+    padding:120px 0px 20px 0px;
+}
+#ovalImg{
+    background-image: url("img/mask.png");
+    background-size: cover;
+    height:80px;
+    width:80px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 4px grey;
+    margin:auto;
+    position: relative; 
+    margin-bottom: 15px;
+}
+#ovalImg::after{
+    content:"";
+    position:absolute;
+    border:solid 2px #A41C25;
+    top:-5px;
+    left:-6px;
+    height:88px;
+    width:88px;
+    border-radius: 50%;
+}
+#ContentUp h3,#ContentUp h4{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0px;
+    position: relative; 
+}
+#ContentUp h3{
+    color:#A41C25;
+    font-size:36px;
+    font-family: Georgia, serif;  
+}
+#ContentUp h4{
+    color:white;
+    font-size: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 200;
+    letter-spacing: 12.5px;
+    margin-top: -5px;
+    padding-left: 10px;
+}
+#contentBottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:30px 0px 120px 0px;
+}
+
+video,.video_info{
+     margin: auto;
+     position: relative;
+     width:55%;
+}
+video{
+    height:550px;
+}
+
+.video_info h4{
+    font-size: 36px;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.time,.location{
+    letter-spacing: 1.5;
+}
+.time,.location,.video_info p{
+    position: relative;
+    font-size:16px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300; 
+    line-height: 1.5;   
+}
+.time{
+    margin-top: 0px;
+}
+.video_info p{
+    font-weight: 100;
+    color:#4A4A4A;
+    text-align: justify;
+}
+.location{
+    color:#A41C25;
+    margin-top: 20px;
+}
+footer{
+    background-color:#F2EDE1;
+    color:#4A4A4A;
+}
+
+@media (max-width: 415px){
+    video{
+        height:220px;
+        width:80%;
+        margin-top: 10px;
+    }
+    .video_info{
+        position: relative;
+        text-align: left;
+        width:80%;
+    }
+    .video_info h4{
+        font-size: 28px;
+    }
+    .time,.location,.video_info p{
+        font-size: 12px;
+    }
+}
